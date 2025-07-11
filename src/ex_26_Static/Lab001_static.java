@@ -18,12 +18,17 @@ public class Lab001_static {
     }
 }
 
-class First{
+class First {
     static int a = 10;
 
     int b = 20;
-}
 
+
+    static {
+        System.out.println("This static block is called whenever a class is loaded");
+    }
+}
 
 //if we declare any variable, method, class as static then it is common to all. no need to create object refernce
 // if it is common we declare it as static
+//here class is loaded at no.5, so the static block is called
