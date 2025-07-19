@@ -15,6 +15,19 @@ public class Lab001_set {
         hs.add("saisri");
         hs.add("sai");
         hs.add("saisri"); //duplicates are not allowed in set. It will not give error but it will not store
-        System.out.println(hs);
+        hs.add("apple");
+        System.out.println("hashset: " + hs);//random order
+
+        ls.add("saisri");
+        ls.add("sai");
+        ls.add("saisri");
+        ls.add("apple");
+        System.out.println("Linked Hashset: " + ls);//order is maintained
+
+        ts.add("saisri");
+        ts.add("sai");
+        ts.add("saisri");
+        ts.add("apple");
+        System.out.println("Treeset: " + ts);//natural sorting
     }
 }
